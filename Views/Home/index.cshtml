@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "container p-3">
+        <h1 class ="pb-3 m-3 border-bottom">Dojo Survey</h1>
+        <div class = "container d-flex justify-content-between mt-4">
+            <div class = "col-4">
+                <form action="/result" method = "post">
+                    <p class ="d-flex justify-content-between">
+                        Your Name:
+                        <input type="text" name = "name" id ="name">
+                    </p>
+                    
+                    <p class ="d-flex justify-content-between">Dojo Location
+                        <select name="dojo">
+                            <option value = "Seattle">Seattle</option>
+                            <option value = "Bellevue">Bellevue</option>
+                            <option value = "San Francisco">San Francisco</option>
+                            <option value = "Los Angeles">Los Angeles</option>
+                        </select>
+                    </p>
+                    <p class ="d-flex justify-content-between">Favorite Language
+                        <select name="language">
+                            <option value = "C++">C++</option>
+                            <option value = "C#">C#</option>
+                            <option value = "Python">Python</option>
+                            <option value = "HTML">HTML</option>
+                        </select>
+                    </p>
+                    <p>Comments :
+                        <textarea name="comment" cols="55" rows="3"></textarea>
+                    </p>
+                    <button class="btn btn-primary mt-2">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
