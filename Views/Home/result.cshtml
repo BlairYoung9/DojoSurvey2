@@ -1,3 +1,4 @@
+@model DojoSurvey.Models.Survey;
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +9,9 @@
 </head>
 <body>
     <h1>Here is your survey</h1>
-    <p>Name: @ViewBag.name</p>
-    <p>Dojo Location: @ViewBag.dojo</p>
-    <p>Favorite Language: @ViewBag.language</p>
-    <p>Comments: @ViewBag.comment</p>
+    <p>Name: @Model.Name</p>
+    <p>Dojo Location: @Model.Dojo</p>
+    <p>Favorite Language: @Model.Language</p>
+    <p>Comments: @Model.Comment</p>
 </body>
 </html>

@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using DojoSurvey.Models;
+
 namespace DojoSurvey.Controllers     //be sure to use your own project's namespace!
 {
     public class HomeController : Controller   //remember inheritance??
@@ -14,14 +16,22 @@ namespace DojoSurvey.Controllers     //be sure to use your own project's namespa
             return View();
         }
         [HttpPost("result")]
-        public ViewResult Result(string name, string dojo, string language, string comment)
+        public ViewResult Result(Survey fromForm)
         {   
-            ViewBag.name = name;
-            ViewBag.dojo = dojo;
-            ViewBag.language = language;
-            ViewBag.comment = comment;
-            return View();
-
+            // ViewBag.name = name;
+            // ViewBag.dojo = dojo;
+            // ViewBag.language = language;
+            // ViewBag.comment = comment;
+            //Survey result  = new Survey( name, dojo, language, comment);
+            
+            if(ModelState.IsValid)
+            {
+                return View(fromForm);
+            }
+            else
+            {
+                return View("index");
+            }
         }
         
         

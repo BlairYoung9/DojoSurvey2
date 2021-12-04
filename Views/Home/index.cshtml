@@ -1,3 +1,4 @@
+@model DojoSurvey.Models.Survey
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,14 +13,15 @@
         <h1 class ="pb-3 m-3 border-bottom">Dojo Survey</h1>
         <div class = "container d-flex justify-content-between mt-4">
             <div class = "col-4">
-                <form action="/result" method = "post">
+                <form asp-action = "Result">
                     <p class ="d-flex justify-content-between">
                         Your Name:
-                        <input type="text" name = "name" id ="name">
+                        <span asp-validation-for="Name"></span>
+                        <input asp-for ="Name">
                     </p>
-                    
                     <p class ="d-flex justify-content-between">Dojo Location
-                        <select name="dojo">
+                        <span asp-validation-for="Dojo"></span>
+                        <select asp-for="Dojo">
                             <option value = "Seattle">Seattle</option>
                             <option value = "Bellevue">Bellevue</option>
                             <option value = "San Francisco">San Francisco</option>
@@ -27,7 +29,8 @@
                         </select>
                     </p>
                     <p class ="d-flex justify-content-between">Favorite Language
-                        <select name="language">
+                        <span asp-validation-for="Language"></span>
+                        <select asp-for="Language">
                             <option value = "C++">C++</option>
                             <option value = "C#">C#</option>
                             <option value = "Python">Python</option>
@@ -35,7 +38,8 @@
                         </select>
                     </p>
                     <p>Comments :
-                        <textarea name="comment" cols="55" rows="3"></textarea>
+                        <span asp-validation-for="Comment"></span>
+                        <textarea asp-for ="Comment" cols="55" rows="3"></textarea>
                     </p>
                     <button class="btn btn-primary mt-2">Register</button>
                 </form>

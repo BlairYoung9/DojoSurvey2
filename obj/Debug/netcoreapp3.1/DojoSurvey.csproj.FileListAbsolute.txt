@@ -30,3 +30,4 @@ C:\Users\blair\OneDrive\Documents\CodingDojo\C#\DojoSurvey\obj\Debug\netcoreapp3
 C:\Users\blair\OneDrive\Documents\CodingDojo\C#\DojoSurvey\obj\Debug\netcoreapp3.1\DojoSurvey.Views.pdb
 C:\Users\blair\OneDrive\Documents\CodingDojo\C#\DojoSurvey\obj\Debug\netcoreapp3.1\DojoSurvey.csproj.CopyComplete
 C:\Users\blair\OneDrive\Documents\CodingDojo\C#\DojoSurvey\obj\Debug\netcoreapp3.1\Razor\Views\Home\result.cshtml.g.cs
+C:\Users\blair\OneDrive\Documents\CodingDojo\C#\DojoSurvey\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs

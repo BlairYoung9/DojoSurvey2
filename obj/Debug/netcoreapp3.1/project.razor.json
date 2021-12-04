@@ -14402,6 +14402,11 @@
   "RootNamespace": "DojoSurvey",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\blair\\OneDrive\\Documents\\CodingDojo\\C#\\DojoSurvey\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\blair\\OneDrive\\Documents\\CodingDojo\\C#\\DojoSurvey\\Views\\Home\\result.cshtml",
       "TargetPath": "Views\\Home\\result.cshtml",
       "FileKind": "mvc"
